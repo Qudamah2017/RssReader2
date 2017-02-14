@@ -82,7 +82,7 @@ public class ReadRss extends AsyncTask<Void, Void, Void> {
                         }else if (cureent.getNodeName().equalsIgnoreCase("pubDate")){
                             item.setPubDate(cureent.getTextContent());
                         }else if (cureent.getNodeName().equalsIgnoreCase("link")){
-                           ;//item.setLink(cureent.getTextContent());
+                           item.setLink(cureent.getTextContent());
                         }else if (cureent.getNodeName().equalsIgnoreCase("media:thumbnail")){
                             //this will return us thumbnail url
                             String url=cureent.getAttributes().item(2).getTextContent();
